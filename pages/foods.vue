@@ -626,7 +626,7 @@ onMounted(() => {
     margin: 0 5rem;
   }
 
-  .section-1-icons i {
+  .section-1-icons .icon {
     font-size: 25rem;
   }
 
@@ -648,7 +648,7 @@ onMounted(() => {
     margin: 2rem;
   }
 
-  .navbar-link i {
+  .navbar-link .icon {
     font-size: 4rem;
   }
 
@@ -660,10 +660,9 @@ onMounted(() => {
 @media (max-width: 700px) {
   .section-heading {
     font-size: 7rem;
-    margin: 0 10rem;
   }
 
-  .section-1-icons i {
+  .section-1-icons .icon {
     font-size: 20rem;
   }
 
@@ -691,7 +690,20 @@ onMounted(() => {
   .navbar-link {
     margin: 0 0.7rem;
   }
+
+  .navbar-link .icon {
+    font-size: 3rem;
+  }
+
+  .navbar-link span {
+    font-size: 1rem;
+  }
+
+  .section-4-text {
+    width: 100%;
+  }
 }
+
 /* End of Responsive */
 
 </style>
