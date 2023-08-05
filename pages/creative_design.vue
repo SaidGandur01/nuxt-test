@@ -235,11 +235,6 @@ onMounted(() => {
   font-weight: 400;
 }
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
 .container {
   width: 100%;
   overflow-x: hidden;
