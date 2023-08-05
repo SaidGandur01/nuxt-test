@@ -12,7 +12,9 @@ export default defineNuxtConfig({
         }
       ],
       title: 'Draft project',
-      link: [],
+      link: [
+        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' }
+      ],
       style: [],
       script: [],
       noscript: []
@@ -20,8 +22,7 @@ export default defineNuxtConfig({
   },
   css: ['@/assets/css/base.css'],
   modules: [
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/google-fonts'
   ],
   googleFonts: {
     families: {
@@ -30,6 +31,9 @@ export default defineNuxtConfig({
       },
       Archivo: {
         wght: [100, 400, 500, 600, 700, 800]
+      },
+      Nunito: {
+        wght: [100,200,300,400,500,600,700,800, 900]
       }
     }
   },
