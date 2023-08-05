@@ -1,23 +1,176 @@
 <template>
+  <!-- Navbar  -->
+  <nav class="navbar target">
+    <a href="#" class="navbar-link">
+      <font-awesome-icon class="icon" :icon="['fas', 'home']" />
+      <span>Home</span>
+    </a>
+    <a href="#" class="navbar-link">
+      <font-awesome-icon class="icon" :icon="['fas', 'utensils']" />
+      <span>Meals</span>
+    </a>
+    <a href="#" class="navbar-link">
+      <font-awesome-icon class="icon" :icon="['fas', 'hamburger']" />
+      <span>Burger</span>
+    </a>
+    <a href="#" class="navbar-link">
+      <font-awesome-icon class="icon" :icon="['fas', 'pizza-slice']" />
+      <span>Pizza</span>
+    </a>
+    <a href="#" class="navbar-link">
+      <font-awesome-icon class="icon" :icon="['fas', 'blender-phone']" />
+      <span>Contact</span>
+    </a>
+  </nav>
+  <div class="menu target"></div>
   <div class="container">
     <section class="section-1">
       <h1 class="section-heading">variety of foods</h1>
       <div class="section-1-icons">
-        <i class="change fas fa-egg"></i>
-        <i class="fas fa-stroopwafel"></i>
-        <i class="fas fa-cheese"></i>
-        <i class="fas fa-hotdog"></i>
-        <i class="fas fa-drumstick-bite"></i>
-        <i class="fas fa-apple-alt"></i>
-        <i class="fas fa-ice-cream"></i>
-        <i class="fas fa-fish"></i>
-        <i class="fas fa-cookie"></i>
-        <i class="fas fa-seedling"></i>
+        <font-awesome-icon class="icon change" :icon="['fas', 'egg']" />
+        <font-awesome-icon class="icon" :icon="['fas', 'stroopwafel']" />
+        <font-awesome-icon class="icon" :icon="['fas', 'cheese']" />
+        <font-awesome-icon class="icon" :icon="['fas', 'hotdog']" />
+        <font-awesome-icon class="icon" :icon="['fas', 'drumstick-bite']" />
+        <font-awesome-icon class="icon" :icon="['fas', 'apple-whole']" />
+        <font-awesome-icon class="icon" :icon="['fas', 'ice-cream']" />
+        <font-awesome-icon class="icon" :icon="['fas', 'fish']" />
+        <font-awesome-icon class="icon" :icon="['fas', 'cookie']" />
+        <font-awesome-icon class="icon" :icon="['fas', 'seedling']" />
       </div>
     </section>
+    <!-- Section 2 -->
+    <section class="section-2">
+      <h1 class="section-heading">popular meals</h1>
+      <div class="cards-container">
+          <div class="card">
+              <img src="img/card-img-1.png" class="card-img" />
+              <h3 class="card-name">Fish</h3>
+              <button class="card-btn">Order now</button>
+          </div>
+          <div class="card">
+              <img src="img/card-img-2.png" class="card-img" />
+              <h3 class="card-name">Cake</h3>
+              <button class="card-btn">Order now</button>
+          </div>
+          <div class="card">
+              <img src="img/card-img-3.png" class="card-img" />
+              <h3 class="card-name">Lobster</h3>
+              <button class="card-btn">Order now</button>
+          </div>
+      </div>
+    </section>
+    <!-- End of Section 2 -->
+    <!-- Section 3 -->
+    <section class="section-3">
+      <h1 class="section-heading">Gallery</h1>
+      <div class="gallery">
+        <a href="#" class="gallery-link" title="Order Now">
+            <img src="img/gallery-img-1.jpg" class="food-img" />
+            <h3 class="food-name">Pancakes</h3>
+            <p class="food-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                commodi possimus iure hic excepturi. Corporis!
+            </p>
+        </a>
+        <a href="#" class="gallery-link" title="Order Now">
+            <img src="img/gallery-img-2.jpg" class="food-img" />
+            <h3 class="food-name">Cupcakes</h3>
+            <p class="food-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                commodi possimus iure hic excepturi. Corporis!
+            </p>
+        </a>
+        <a href="#" class="gallery-link" title="Order Now">
+            <img src="img/gallery-img-3.jpg" class="food-img" />
+            <h3 class="food-name">Hummus</h3>
+            <p class="food-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                commodi possimus iure hic excepturi. Corporis!
+            </p>
+        </a>
+        <a href="#" class="gallery-link" title="Order Now">
+            <img src="img/gallery-img-4.jpg" class="food-img" />
+            <h3 class="food-name">Hamburger</h3>
+            <p class="food-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                commodi possimus iure hic excepturi. Corporis!
+            </p>
+        </a>
+        <a href="#" class="gallery-link" title="Order Now">
+            <img src="img/gallery-img-5.jpg" class="food-img" />
+            <h3 class="food-name">Salmon</h3>
+            <p class="food-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                commodi possimus iure hic excepturi. Corporis!
+            </p>
+        </a>
+        <a href="#" class="gallery-link" title="Order Now">
+            <img src="img/gallery-img-6.jpg" class="food-img" />
+            <h3 class="food-name">Vegetables</h3>
+            <p class="food-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                commodi possimus iure hic excepturi. Corporis!
+            </p>
+        </a>
+      </div>
+    </section>
+    <!-- End of Section 3 -->
+    <!-- Section 4 -->
+    <section class="section-4">
+      <div class="section-4-text">
+          <h2 class="section-4-heading">Sign Me Up</h2>
+          <p class="section-4-paragraph">
+              BE THE FIRST TO KNOW ABOUT NEW PRODUCTS
+          </p>
+      </div>
+      <form class="signup-form ">
+          <input
+              type="email"
+              class="signup-form-input"
+              placeholder="Enter Your Email"
+          />
+          <button type="submit" class="signup-form-btn">
+              <i class="fas fa-arrow-right"></i>
+          </button>
+      </form>
+      <p class="copyright">CodeAndCreate &copy; All rights reserved</p>
+    </section>
+    <!-- End of Section 4 -->
   </div>
 </template>
 <script lang="ts" setup>
+onMounted(() => {
+  const menu = document.querySelector('.menu')
+  if (menu) {
+    menu.addEventListener('click', () => {
+      document.querySelectorAll('.target').forEach((item) => {
+        item.classList.toggle('change');
+      })
+    })
+  }
+  const icons = document.querySelectorAll('.section-1-icons .icon')
+  let counter = 1
+
+  setInterval(() => {
+    counter++
+    const icon = document.querySelector('.section-1-icons .change')
+    if (icon) {
+    icon.classList.remove('change')
+  
+    if (counter > icons.length) {
+      icons[0].classList.add('change')
+      counter = 1
+    } else {
+      if (icon.nextElementSibling) {
+        icon.nextElementSibling.classList.add('change')
+      }
+    }
+    }
+  }, 4000)
+})
+
+
 </script>
 <style lang="scss" scoped>
 .section-heading {
@@ -92,7 +245,7 @@
   color: #fff;
 }
 
-.navbar-link i {
+.navbar-link .icon {
   font-size: 7rem;
 }
 
@@ -147,7 +300,7 @@
   justify-content: space-evenly;
 }
 
-.section-1-icons i {
+.section-1-icons .icon {
   font-size: 35rem;
   color: #a79a2d;
   position: absolute;
@@ -156,7 +309,7 @@
   transition: transform 0.3s;
 }
 
-.section-1-icons i.change {
+.section-1-icons .change {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.3s 0.3s;
 }

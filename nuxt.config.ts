@@ -20,10 +20,14 @@ export default defineNuxtConfig({
       noscript: []
     }
   },
-  css: ['@/assets/css/base.css'],
+  css: [
+    '@/assets/css/base.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
+  ],
   modules: [
     '@nuxtjs/google-fonts'
   ],
+  ssr: false,
   googleFonts: {
     families: {
       Poppins: {
