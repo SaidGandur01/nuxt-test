@@ -44,17 +44,17 @@
       <h1 class="section-heading">popular meals</h1>
       <div class="cards-container">
           <div class="card">
-              <img src="~/assets/img/card-img-1.png" class="card-img" />
+              <img src="~/assets/img/foods/card-img-1.png" class="card-img" />
               <h3 class="card-name">Fish</h3>
               <button class="card-btn">Order now</button>
           </div>
           <div class="card">
-              <img src="~/assets/img/card-img-2.png" class="card-img" />
+              <img src="~/assets/img/foods/card-img-2.png" class="card-img" />
               <h3 class="card-name">Cake</h3>
               <button class="card-btn">Order now</button>
           </div>
           <div class="card">
-              <img src="~/assets/img/card-img-3.png" class="card-img" />
+              <img src="~/assets/img/foods/card-img-3.png" class="card-img" />
               <h3 class="card-name">Lobster</h3>
               <button class="card-btn">Order now</button>
           </div>
@@ -66,7 +66,7 @@
       <h1 class="section-heading">Gallery</h1>
       <div class="gallery">
         <a href="#" class="gallery-link" title="Order Now">
-            <img src="~/assets/img/gallery-img-1.jpg" class="food-img" />
+            <img src="~/assets/img/foods/gallery-img-1.jpg" class="food-img" />
             <h3 class="food-name">Pancakes</h3>
             <p class="food-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -74,7 +74,7 @@
             </p>
         </a>
         <a href="#" class="gallery-link" title="Order Now">
-            <img src="~/assets/img/gallery-img-2.jpg" class="food-img" />
+            <img src="~/assets/img/foods/gallery-img-2.jpg" class="food-img" />
             <h3 class="food-name">Cupcakes</h3>
             <p class="food-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -82,7 +82,7 @@
             </p>
         </a>
         <a href="#" class="gallery-link" title="Order Now">
-            <img src="~/assets/img/gallery-img-3.jpg" class="food-img" />
+            <img src="~/assets/img/foods/gallery-img-3.jpg" class="food-img" />
             <h3 class="food-name">Hummus</h3>
             <p class="food-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -90,7 +90,7 @@
             </p>
         </a>
         <a href="#" class="gallery-link" title="Order Now">
-            <img src="~/assets/img/gallery-img-4.jpg" class="food-img" />
+            <img src="~/assets/img/foods/gallery-img-4.jpg" class="food-img" />
             <h3 class="food-name">Hamburger</h3>
             <p class="food-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -98,7 +98,7 @@
             </p>
         </a>
         <a href="#" class="gallery-link" title="Order Now">
-            <img src="~/assets/img/gallery-img-5.jpg" class="food-img" />
+            <img src="~/assets/img/foods/gallery-img-5.jpg" class="food-img" />
             <h3 class="food-name">Salmon</h3>
             <p class="food-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -106,7 +106,7 @@
             </p>
         </a>
         <a href="#" class="gallery-link" title="Order Now">
-            <img src="~/assets/img/gallery-img-6.jpg" class="food-img" />
+            <img src="~/assets/img/foods/gallery-img-6.jpg" class="food-img" />
             <h3 class="food-name">Vegetables</h3>
             <p class="food-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
