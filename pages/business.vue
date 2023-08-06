@@ -1217,10 +1217,14 @@ onMounted(() => {
     width: 80%;
   }
 
+  .contact-details {
+    margin-top: 5rem;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
   .contact-details div {
-    display: none;
-    // width: 18rem;
-    // margin: 3rem 1rem;
+    margin: 0;
   }
 
   .contact-form {
