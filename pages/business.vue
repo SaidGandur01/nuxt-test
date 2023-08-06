@@ -43,6 +43,7 @@
       <div class="section-heading-line"></div>
       <div class="video-wrapper">
         <video
+          poster="~assets/img/business/about-1.jpg"
           src="~assets/img/business/about-us-video.mp4"
           class="video"
         ></video>
