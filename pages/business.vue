@@ -128,9 +128,9 @@
               </ul>
               <button class="pricing-card-btn btn-free">Choose Plan</button>
             </div>
-            <div class="pricing-card-back back-free">
+            <!-- <div class="pricing-card-back back-free">
               <a href="#">Order Now</a>
-            </div>
+            </div> -->
           </SwiperSlide>
           <SwiperSlide class="pricing-card swiper-slide">
             <div class="pricing-card-front">
@@ -163,9 +163,9 @@
               </ul>
               <button class="pricing-card-btn btn-basic">Choose Plan</button>
             </div>
-            <div class="pricing-card-back back-basic">
+            <!-- <div class="pricing-card-back back-basic">
               <a href="#">Order Now</a>
-            </div>
+            </div> -->
           </SwiperSlide>
           <SwiperSlide class="pricing-card swiper-slide">
             <div class="pricing-card-front">
@@ -195,9 +195,9 @@
               </ul>
               <button class="pricing-card-btn btn-standard">Choose Plan</button>
             </div>
-            <div class="pricing-card-back back-standard">
+            <!-- <div class="pricing-card-back back-standard">
               <a href="#">Order Now</a>
-            </div>
+            </div> -->
           </SwiperSlide>
           <SwiperSlide class="pricing-card swiper-slide">
             <div class="pricing-card-front">
