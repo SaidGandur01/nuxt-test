@@ -38,7 +38,7 @@
     <!-- End of Section 1 -->
 
     <!-- Section 2 -->
-    <!-- <section class="section-2" id="about-us">
+    <section class="section-2" id="about-us">
       <h1 class="section-heading">About Us</h1>
       <div class="section-heading-line"></div>
       <div class="video-wrapper">
@@ -72,7 +72,7 @@
           :icon="['fas', 'quote-right']"
         />
       </p>
-    </section> -->
+    </section>
     <!-- End of Section 2 -->
 
     <!-- Section 3 -->
@@ -1150,6 +1150,7 @@ onMounted(() => {
 
   .section-2 {
     height: 60vh;
+    // display: none;
   }
 
   .contact-details div {
@@ -1213,7 +1214,7 @@ onMounted(() => {
   }
 
   .section-2-paragraph {
-    width: 60rem;
+    width: 50%;
   }
 
   .contact-details div {
