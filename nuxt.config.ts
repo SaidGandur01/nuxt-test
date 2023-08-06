@@ -13,10 +13,11 @@ export default defineNuxtConfig({
       ],
       title: 'Draft project',
       link: [
-        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' }
+        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' },
       ],
       style: [],
-      script: [],
+      script: [
+      ],
       noscript: []
     }
   },
@@ -25,7 +26,8 @@ export default defineNuxtConfig({
     '@fortawesome/fontawesome-svg-core/styles.css'
   ],
   modules: [
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    'nuxt-swiper'
   ],
   ssr: false,
   googleFonts: {
