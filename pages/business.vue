@@ -239,7 +239,7 @@
     <!-- End of Section 3 -->
 
     <!-- Section 4 -->
-    <!-- <section class="section-4" id="contact">
+    <section class="section-4" id="contact">
       <h1 class="section-heading">Contact</h1>
       <div class="section-heading-line"></div>
       <div class="contact-wrapper">
@@ -274,7 +274,7 @@
           <input type="submit" value="Send Message" />
         </form>
       </div>
-    </section> -->
+    </section>
     <!-- End of Section 4 -->
 
     <!-- Footer -->
@@ -1218,8 +1218,9 @@ onMounted(() => {
   }
 
   .contact-details div {
-    width: 18rem;
-    margin: 3rem 1rem;
+    display: none;
+    // width: 18rem;
+    // margin: 3rem 1rem;
   }
 
   .contact-form {
