@@ -278,7 +278,7 @@
     <!-- End of Section 4 -->
 
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-nav">
         <a href="#home">Home</a>
         <a href="#about-us">About Us</a>
@@ -288,7 +288,7 @@
       <p class="copyright">
         Copyright &copy; CodeAndCreate All Rights Reserved
       </p>
-    </footer> -->
+    </footer>
     <!-- End of Footer -->
   </div>
 </template>
@@ -1210,11 +1210,11 @@ onMounted(() => {
   }
 
   .video-wrapper {
-    width: 60rem;
+    width: 80%;
   }
 
   .section-2-paragraph {
-    width: 50%;
+    width: 80%;
   }
 
   .contact-details div {
@@ -1223,7 +1223,7 @@ onMounted(() => {
   }
 
   .contact-form {
-    width: 60rem;
+    width: 80%;
   }
 }
 /* End of Responsive */
