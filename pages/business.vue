@@ -38,7 +38,7 @@
     <!-- End of Section 1 -->
 
     <!-- Section 2 -->
-    <section class="section-2" id="about-us">
+    <!-- <section class="section-2" id="about-us">
       <h1 class="section-heading">About Us</h1>
       <div class="section-heading-line"></div>
       <div class="video-wrapper">
@@ -72,11 +72,11 @@
           :icon="['fas', 'quote-right']"
         />
       </p>
-    </section>
+    </section> -->
     <!-- End of Section 2 -->
 
     <!-- Section 3 -->
-    <section class="section-3" id="pricing">
+    <!-- <section class="section-3" id="pricing">
       <h1 class="section-heading">Pricing</h1>
       <div class="section-heading-line"></div>
       <Swiper
@@ -235,11 +235,11 @@
             </div>
           </SwiperSlide>
       </Swiper>
-    </section>
+    </section> -->
     <!-- End of Section 3 -->
 
     <!-- Section 4 -->
-    <section class="section-4" id="contact">
+    <!-- <section class="section-4" id="contact">
       <h1 class="section-heading">Contact</h1>
       <div class="section-heading-line"></div>
       <div class="contact-wrapper">
@@ -274,7 +274,7 @@
           <input type="submit" value="Send Message" />
         </form>
       </div>
-    </section>
+    </section> -->
     <!-- End of Section 4 -->
 
     <!-- Footer -->
