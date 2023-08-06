@@ -278,7 +278,7 @@
     <!-- End of Section 4 -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-nav">
         <a href="#home">Home</a>
         <a href="#about-us">About Us</a>
@@ -288,7 +288,7 @@
       <p class="copyright">
         Copyright &copy; CodeAndCreate All Rights Reserved
       </p>
-    </footer>
+    </footer> -->
     <!-- End of Footer -->
   </div>
 </template>
