@@ -1311,7 +1311,7 @@ onMounted(() => {
     width: 75vw !important;
   }
 
-  .section-3 {
+  .section-3, .section-2, .section-4, .section-5, .section-6 {
     display: none !important;
   }
 
