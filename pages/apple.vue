@@ -23,22 +23,22 @@
           </div>
         </div>
         <div class="controls" @mouseover="handleOverControls()" @mouseout="handleOutControls()">
-          <a href="#" class="top-x-control" @click="topXHandle()">
+          <a href="#" class="top-x-control" @click.prevent="topXHandle()">
             <font-awesome-icon class="icon" :icon="['fas', 'arrow-up']" />
           </a>
-          <a href="#" class="top-x-bottom" @click="bottomXHandle()">
+          <a href="#" class="top-x-bottom" @click.prevent="bottomXHandle()">
             <font-awesome-icon class="icon" :icon="['fas', 'arrow-down']" />
           </a>
-          <a href="#" class="left-y-control" @click="leftYHandle()">
+          <a href="#" class="left-y-control" @click.prevent="leftYHandle()">
             <font-awesome-icon class="icon " :icon="['fas', 'arrow-left']" />
           </a>
-          <a href="#" class="right-y-control" @click="rightYHandle()">
+          <a href="#" class="right-y-control" @click.prevent="rightYHandle()">
             <font-awesome-icon class="icon " :icon="['fas', 'arrow-right']" />
           </a>
-          <a href="#" class="top-z-control" @click="topZHandle()">
+          <a href="#" class="top-z-control" @click.prevent="topZHandle()">
             <font-awesome-icon class="icon " :icon="['fas', 'arrow-down']" />
           </a>
-          <a href="#" class="bottom-z-control" @click="bottomZHandle()">
+          <a href="#" class="bottom-z-control" @click.prevent="bottomZHandle()">
             <font-awesome-icon class="icon " :icon="['fas', 'arrow-up']" />
           </a>
         </div>
@@ -97,8 +97,48 @@
     <!-- End of section 3 -->
 
     <!-- Section 4 -->
-    <section class="section-4">
+    <section class="section-4 center">
+      <div class="watches center">
+        <div class="watch-bands center">
+          <img :src="watchBandOne" class="watch-band-img" alt="watch-band-one">
+          <img :src="watchBandTwo" class="watch-band-img" alt="watch-band-two">
+          <img :src="watchBandThree" class="watch-band-img" alt="watch-band-three">
+          <img :src="watchBandFour" class="watch-band-img" alt="watch-band-four">
+          <img :src="watchBandFive" class="watch-band-img" alt="watch-band-five">
+          <img :src="watchBandSix" class="watch-band-img" alt="watch-band-six">
+          <img :src="watchBandSeven" class="watch-band-img" alt="watch-band-seven">
+          <img :src="watchBandEight" class="watch-band-img" alt="watch-band-eight">
+          <img :src="watchBandNine" class="watch-band-img" alt="watch-band-nine">
+        </div>
+        <div class="watch-cases center">
+          <img :src="watchCaseOne" class="watch-case-img" alt="watch-case-one">
+          <img :src="watchCaseTwo" class="watch-case-img" alt="watch-case-two">
+          <img :src="watchCaseThree" class="watch-case-img" alt="watch-case-three">
+          <img :src="watchCaseFour" class="watch-case-img" alt="watch-case-four">
+          <img :src="watchCaseFive" class="watch-case-img" alt="watch-case-five">
+          <img :src="watchCaseSix" class="watch-case-img" alt="watch-case-six">
+          <img :src="watchCaseSeven" class="watch-case-img" alt="watch-case-seven">
+          <img :src="watchCaseEight" class="watch-case-img" alt="watch-case-eight">
+          <img :src="watchCaseNine" class="watch-case-img" alt="watch-case-nine">
+        </div>
+      </div>
 
+      <a href="#" class="watch-control watch-top-control center" @click.prevent="watchTopControl()">
+        <font-awesome-icon class="icon" :icon="['fas', 'angle-up']" />
+      </a>
+      <a href="#" class="watch-control watch-right-control center" @click.prevent="watchRightControl()">
+        <font-awesome-icon class="icon" :icon="['fas', 'angle-right']" />
+      </a>
+      <a href="#" class="watch-control watch-bottom-control center" @click.prevent="watchBottomControl()">
+        <font-awesome-icon class="icon" :icon="['fas', 'angle-down']" />
+      </a>
+      <a href="#" class="watch-control watch-left-control center" @click.prevent="watchLeftControl()">
+        <font-awesome-icon class="icon" :icon="['fas', 'angle-left']" />
+      </a>
+
+      <button class="watch-btn">
+        Buy Now
+      </button>
     </section>
     <!-- End of Section 4 -->
   </div>
@@ -111,9 +151,30 @@ import bg4 from 'assets/img/apple/slideshow/section-1-bg-4.jpg';
 import bg5 from 'assets/img/apple/slideshow/section-1-bg-5.jpg';
 import iphoneImageOne from 'assets/img/apple/iPhones/iphones-1-img.png'
 import iphoneImageTwo from 'assets/img/apple/iPhones/iphones-2-img.png'
+import watchBandOne from 'assets/img/apple/watches/watch-band-1.jpg'
+import watchBandTwo from 'assets/img/apple/watches/watch-band-2.jpg'
+import watchBandThree from 'assets/img/apple/watches/watch-band-3.jpg'
+import watchBandFour from 'assets/img/apple/watches/watch-band-4.jpg'
+import watchBandFive from 'assets/img/apple/watches/watch-band-5.jpg'
+import watchBandSix from 'assets/img/apple/watches/watch-band-6.jpg'
+import watchBandSeven from 'assets/img/apple/watches/watch-band-7.jpg'
+import watchBandEight from 'assets/img/apple/watches/watch-band-8.jpg'
+import watchBandNine from 'assets/img/apple/watches/watch-band-9.jpg'
+import watchCaseOne from 'assets/img/apple/watches/watch-case-1.png'
+import watchCaseTwo from 'assets/img/apple/watches/watch-case-2.png'
+import watchCaseThree from 'assets/img/apple/watches/watch-case-3.png'
+import watchCaseFour from 'assets/img/apple/watches/watch-case-4.png'
+import watchCaseFive from 'assets/img/apple/watches/watch-case-5.png'
+import watchCaseSix from 'assets/img/apple/watches/watch-case-6.png'
+import watchCaseSeven from 'assets/img/apple/watches/watch-case-7.png'
+import watchCaseEight from 'assets/img/apple/watches/watch-case-8.png'
+import watchCaseNine from 'assets/img/apple/watches/watch-case-9.png'
+
 let y = 20
 let x = 0
 let z = 0
+let watchAxisY = 0
+let watchAxisX = 0
 let playPhoneAnimation = ref<boolean>(true)
 let phoneAnimationInterval: string | number | NodeJS.Timer | undefined
 const topXHandle = (): void => {
@@ -139,6 +200,59 @@ const topZHandle = (): void => {
 const bottomZHandle = (): void => {
   const cube = <HTMLElement>document.querySelector('.cube')
   cube?.setAttribute('style', `transform: rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z += 20}deg)`)
+}
+
+// This is to hide the controls of the watch sections.
+const hideWatchControls = (): void => {
+  const watchTopControl = document.querySelector('.watch-top-control')
+  const watchBottomControl = document.querySelector('.watch-bottom-control')
+  const watchRightControl = document.querySelector('.watch-right-control')
+  const watchLeftControl = document.querySelector('.watch-left-control')
+  if (watchAxisY === -280) {
+    watchTopControl?.classList.add('hide-control')
+  } else {
+    watchTopControl?.classList.remove('hide-control')
+  }
+
+  if (watchAxisY === 280) {
+    watchBottomControl?.classList.add('hide-control')
+  } else {
+    watchBottomControl?.classList.remove('hide-control')
+  }
+
+  if (watchAxisX === 280) {
+    watchRightControl?.classList.add('hide-control')
+  } else {
+    watchRightControl?.classList.remove('hide-control')
+  }
+
+  if (watchAxisX === -280) {
+    watchLeftControl?.classList.add('hide-control')
+  } else {
+    watchLeftControl?.classList.remove('hide-control')
+  }
+}
+
+// This is to create the slide effects for the watches section (section 4)
+const watchTopControl = (): void => {
+  const watchCases = document.querySelector('.watch-cases')
+  watchCases?.setAttribute('style', `margin-top: ${watchAxisY -= 70}rem`)
+  hideWatchControls()
+}
+const watchRightControl = (): void => {
+  const watchBands = document.querySelector('.watch-bands')
+  watchBands?.setAttribute('style', `margin-right: ${watchAxisX += 70}rem`)
+  hideWatchControls()
+}
+const watchBottomControl = (): void => {
+  const watchCases = document.querySelector('.watch-cases')
+  watchCases?.setAttribute('style', `margin-top: ${watchAxisY += 70}rem`)
+  hideWatchControls()
+}
+const watchLeftControl = (): void => {
+  const watchBands = document.querySelector('.watch-bands')
+  watchBands?.setAttribute('style', `margin-right: ${watchAxisX -= 70}rem`)
+  hideWatchControls()
 }
 
 // This is to play and pause the rotation of the box at the section one.
@@ -784,7 +898,92 @@ onMounted(() => {
   // End of Section 3
 
   // Section 4
+  .section-4 {
+    height: 140vh;
+    padding: 20vh 0;
+    flex-direction: column;
+    position: relative;
 
+    .watches {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      .watch-cases {
+        flex-direction: column;
+        transition: margin-top 1s;
+      }
+
+      .watch-bands {
+        transition: margin-right 1s;
+      }
+
+      & > div {
+        position: absolute;
+      }
+
+      img {
+        width: 35rem;
+        height: 35rem;
+        object-fit: contain;
+      }
+    }
+
+    .watch-control {
+      position: absolute;
+      width: 4rem;
+      height: 4rem;
+      background-color: rgba(221, 221, 221, 0.4);
+      border-radius: 5rem;
+
+      .icon {
+        font-size: 3rem;
+        color: var(--primary-color);
+      }
+    }
+
+    .hide-control {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .watch-top-control {
+      top: 22vh;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .watch-right-control {
+      top: 50%;
+      right: 2rem;
+      transform: translateY(-50%);
+    }
+    .watch-bottom-control {
+      bottom: 20vh;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .watch-left-control {
+      top: 50%;
+      left: 2rem;
+      transform: translateY(-50%);
+    }
+
+    .watch-btn {
+      position: absolute;
+      bottom: 30vh;
+      right: 35%;
+      width: 13rem;
+      height: 5rem;
+      background-color: var(--black-color);
+      color: var(--primary-color);
+      border: 0.1rem dashed var(--white-color);
+      border-radius: 4rem;
+      font-size: 1.6rem;
+      font-weight: 200;
+      cursor: pointer;
+    }
+  }
   // End of Section 4
 }
 </style>
