@@ -1124,17 +1124,17 @@ onMounted(() => {
 // Responsive
 @media(max-width: 1500px) {
   html {
-    font-size: 45%;
+    font-size: 45% !important;
   }
 }
 
 @media(max-width: 1100px) {
   html {
-    font-size: 40%;
+    font-size: 40% !important;
   }
 
   .navbar-link {
-    font-weight: 700;
+    font-weight: 700 !important;
   }
 
   .section-1-banner h1 {
@@ -1197,7 +1197,7 @@ onMounted(() => {
 
   .section-1-banner h1 {
     position: relative;
-    left: -5rem;
+    left: -5rem !important;
   }
 
   .section-1-banner h1::first-letter {
@@ -1221,8 +1221,8 @@ onMounted(() => {
   }
 
   .iphones {
-    width: 70vw;
-    height: 70vh;
+    width: 70vw !important;
+    height: 70vh !important;
   }
 
   .watch-btn {
@@ -1300,7 +1300,7 @@ onMounted(() => {
   .navbar {
     left: 50%;
     transform: translateX(-50%) !important;
-    width: max-content;
+    width: max-content !important;
   }
 
   .section-1-banner p {
@@ -1332,8 +1332,12 @@ onMounted(() => {
     right: 5% !important;
   }
 
+  .section-6 {
+    height: 30vh !important;
+  }
+
   .icon-link img {
-    width: 6rem !important;
+    width: 5rem !important;
   }
 }
 // End of Responsive
