@@ -1,16 +1,16 @@
 <template>
   <div class="container apple-clon">
     <!-- Section 1 -->
-    <section class="section-1">
+    <section class="section-1" id="section-1">
       <a href="#" class="logo">
         <font-awesome-icon class="icon" :icon="['fab', 'apple']" />
       </a>
 
       <nav class="navbar">
-        <a href="#" class="navbar-link">iPhone 12</a>
-        <a href="#" class="navbar-link">Macbook Air</a>
-        <a href="#" class="navbar-link">Watch</a>
-        <a href="#" class="navbar-link">AirPods</a>
+        <a href="#section-2" class="navbar-link">iPhone 12</a>
+        <a href="#section-3" class="navbar-link">Macbook Air</a>
+        <a href="#section-3" class="navbar-link">Watch</a>
+        <a href="#section-4" class="navbar-link">AirPods</a>
       </nav>
 
       <div class="cube-wrapper">
@@ -56,17 +56,17 @@
     <!-- End of Section 1 -->
 
     <!-- Section 2 -->
-    <section class="section-2">
+    <section class="section-2" id="section-2">
       <h1 class="section-2-heading">iPhone 12</h1>
       <div class="iphones">
         <img :src='iphoneImageOne' class="iphone-img-1" alt="iphone-1">
         <img :src='iphoneImageTwo' class="iphone-img-2" alt="iphone-2">
       </div>
       <div class="iphone-btns">
-        <a href="#" class="iphone-btn center">
+        <a href="#" @click.prevent class="iphone-btn center">
           <span>Learn More</span>
         </a>
-        <a href="#" class="iphone-btn center">
+        <a href="#" @click.prevent class="iphone-btn center">
           <span>Shop</span>
         </a>
       </div>
@@ -74,7 +74,7 @@
     <!-- End of section 2 -->
 
     <!-- Section 3 -->
-    <section class="section-3 center">
+    <section class="section-3 center" id="section-3">
       <h1 class="section-3-heading">MacBook Air</h1>
       <div class="section-3-content center">
         <img src="~assets/img/apple/MacBook/macbook-screen.png" class="macbook-img-1" alt="macbook-air-img-1">
@@ -97,7 +97,7 @@
     <!-- End of section 3 -->
 
     <!-- Section 4 -->
-    <section class="section-4 center">
+    <section class="section-4 center" id="section-4">
       <div class="watches center">
         <div class="watch-bands center">
           <img :src="watchBandOne" class="watch-band-img" alt="watch-band-one">
@@ -143,7 +143,7 @@
     <!-- End of Section 4 -->
 
     <!-- Section 5 -->
-    <section class="section-5 center">
+    <section class="section-5 center" id="section-5">
       <div class="airpods">
         <h1 class="section-5-heading">AirPods</h1>
         
@@ -157,6 +157,27 @@
       </div>
     </section>
     <!-- End of Section 5 -->
+
+    <section class="section-6 center">
+      <div class="section-6-icons">
+        <a href="#section-1" class="icon-link">
+          <img :src="footerIconOne" alt="home-icon">
+        </a>
+        <a href="#section-2" class="icon-link">
+          <img :src="footerIconTwo" alt="iphone-icon">
+        </a>
+        <a href="#section-3" class="icon-link">
+          <img :src="footerIconThree" alt="macbook-icon">
+        </a>
+        <a href="#section-4" class="icon-link">
+          <img :src="footerIconFour" alt="watch-icon">
+        </a>
+        <a href="#section-5" class="icon-link">
+          <img :src="footerIconFive" alt="airpods-icon">
+        </a>
+      </div>
+      <p class="copyright">Copyright &copy; CodeAndCreate All Rights Reserved</p>
+    </section>
   </div>
 </template>
 <script lang="ts" setup>
@@ -187,7 +208,16 @@ import watchCaseEight from 'assets/img/apple/watches/watch-case-8.png'
 import watchCaseNine from 'assets/img/apple/watches/watch-case-9.png'
 import airPodsOne from 'assets/img/apple/AirPods/airpods-1.png'
 import airPodsTwo from 'assets/img/apple/AirPods/airpods-2.png'
+import footerIconOne from 'assets/img/apple/Icons/home-icon.png'
+import footerIconTwo from 'assets/img/apple/Icons/iphone-icon.png'
+import footerIconThree from 'assets/img/apple/Icons/macbook-icon.png'
+import footerIconFour from 'assets/img/apple/Icons/watch-icon.png'
+import footerIconFive from 'assets/img/apple/Icons/airpods-icon.png'
 
+// useHead({
+//   htmlAttrs: { dir: 'rtl', lang: 'fa' },
+//   link: [{ rel: 'icon', type: 'image/png', href: "assets/img/apple/Icons/home-icon.png" }]
+// })
 let y = 20
 let x = 0
 let z = 0
@@ -360,6 +390,10 @@ onMounted(() => {
 .apple-clon {
   * {
     font-family: 'Work Sans', sans-serif;
+  }
+
+  Html {
+    scroll-behavior: smooth;
   }
   
   .center {
@@ -1062,5 +1096,28 @@ onMounted(() => {
     }
   }
   // End of Section 5
+
+  // Section 6
+  .section-6 {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+
+    .icon-link {
+      margin: 0 5rem;
+    }
+
+    img {
+      width: 10rem;
+    }
+
+    .copyright {
+      position: absolute;
+      bottom: 5rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+  // End of Section 6
 }
 </style>
