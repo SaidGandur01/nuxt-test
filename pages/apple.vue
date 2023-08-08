@@ -95,14 +95,20 @@
       </div>
     </section>
     <!-- End of section 3 -->
+
+    <!-- Section 4 -->
+    <section class="section-4">
+
+    </section>
+    <!-- End of Section 4 -->
   </div>
 </template>
 <script lang="ts" setup>
-import bg1 from "assets/img/apple/slideshow/section-1-bg-1.jpg";
-import bg2 from "assets/img/apple/slideshow/section-1-bg-2.jpg";
-import bg3 from "assets/img/apple/slideshow/section-1-bg-3.jpg";
-import bg4 from "assets/img/apple/slideshow/section-1-bg-4.jpg";
-import bg5 from "assets/img/apple/slideshow/section-1-bg-5.jpg";
+import bg1 from "~/assets/img/apple/slideshow/section-1-bg-1.jpg";
+import bg2 from "~/assets/img/apple/slideshow/section-1-bg-2.jpg";
+import bg3 from "~/assets/img/apple/slideshow/section-1-bg-3.jpg";
+import bg4 from "~/assets/img/apple/slideshow/section-1-bg-4.jpg";
+import bg5 from "~/assets/img/apple/slideshow/section-1-bg-5.jpg";
 let y = 20
 let x = 0
 let z = 0
@@ -774,5 +780,9 @@ onMounted(() => {
     }
   }
   // End of Section 3
+
+  // Section 4
+
+  // End of Section 4
 }
 </style>
