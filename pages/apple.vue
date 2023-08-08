@@ -1337,7 +1337,7 @@ onMounted(() => {
   }
 
   .icon-link img {
-    width: 5rem !important;
+    width: 3rem !important;
   }
 }
 // End of Responsive
