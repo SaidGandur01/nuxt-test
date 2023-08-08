@@ -1333,8 +1333,7 @@ onMounted(() => {
   }
 
   .watch-btn {
-    right: 10% !important;
-    bottom: 50vw !important;
+    right: 6% !important;
   }
 
   .section-6 {
