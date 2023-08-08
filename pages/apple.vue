@@ -141,6 +141,22 @@
       </button>
     </section>
     <!-- End of Section 4 -->
+
+    <!-- Section 5 -->
+    <section class="section-5 center">
+      <div class="airpods">
+        <h1 class="section-5-heading">AirPods</h1>
+        
+        <img :src="airPodsOne" alt="airpods-one">
+        <img :src="airPodsTwo" class="airpods-img-2" alt="airpods-two">
+
+        <div class="airpods-buttons">
+          <button class="airpods-btn">Learn More</button>
+          <button class="airpods-btn">Buy</button>
+        </div>
+      </div>
+    </section>
+    <!-- End of Section 5 -->
   </div>
 </template>
 <script lang="ts" setup>
@@ -169,6 +185,8 @@ import watchCaseSix from 'assets/img/apple/watches/watch-case-6.png'
 import watchCaseSeven from 'assets/img/apple/watches/watch-case-7.png'
 import watchCaseEight from 'assets/img/apple/watches/watch-case-8.png'
 import watchCaseNine from 'assets/img/apple/watches/watch-case-9.png'
+import airPodsOne from 'assets/img/apple/AirPods/airpods-1.png'
+import airPodsTwo from 'assets/img/apple/AirPods/airpods-2.png'
 
 let y = 20
 let x = 0
@@ -985,5 +1003,64 @@ onMounted(() => {
     }
   }
   // End of Section 4
+
+  // Section 5
+  .section-5 {
+    width: 100%;
+    height: 100vh;
+
+    .airpods {
+      width: 90%;
+      height: 80%;
+      display: flex;
+      position: relative;
+
+      .section-5-heading {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 15rem;
+        font-weight: 300;
+        color: var(--white-color);
+        text-shadow: 0.1rem 0.1rem 0 #999;
+      }
+
+      img {
+        width: 50%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      &-img-2 {
+        background-color: var(--primary-color);
+      }
+
+      &-buttons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        margin-top: 5rem;
+
+        .airpods-btn {
+          width: 15rem;
+          height: 4rem;
+          background-color: var(--primary-color);
+          margin: 0 2rem;
+          border: none;
+          border-radius: 0.5rem;
+          color: var(--white-color);
+          cursor: pointer;
+        }
+
+        .airpods-btn:last-child {
+          background-color: var(--white-color);
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+  // End of Section 5
 }
 </style>
