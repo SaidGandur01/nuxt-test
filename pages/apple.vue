@@ -1336,6 +1336,11 @@ onMounted(() => {
     right: 4% !important;
   }
 
+  .airpods-buttons {
+    width: 40rem !important;
+    text-align: center !important;
+  }
+
   .section-6 {
     height: 30vh !important;
   }
