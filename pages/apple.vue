@@ -9,8 +9,8 @@
       <nav class="navbar">
         <a href="#section-2" class="navbar-link">iPhone 12</a>
         <a href="#section-3" class="navbar-link">Macbook Air</a>
-        <a href="#section-3" class="navbar-link">Watch</a>
-        <a href="#section-4" class="navbar-link">AirPods</a>
+        <a href="#section-4" class="navbar-link">Watch</a>
+        <a href="#section-5" class="navbar-link">AirPods</a>
       </nav>
 
       <div class="cube-wrapper">
@@ -147,7 +147,7 @@
       <div class="airpods">
         <h1 class="section-5-heading">AirPods</h1>
         
-        <img :src="airPodsOne" alt="airpods-one">
+        <img :src="airPodsOne" class="airpods-img-1" alt="airpods-one">
         <img :src="airPodsTwo" class="airpods-img-2" alt="airpods-two">
 
         <div class="airpods-buttons">
@@ -1120,4 +1120,221 @@ onMounted(() => {
   }
   // End of Section 6
 }
+
+// Responsive
+@media(max-width: 1500px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media(max-width: 1100px) {
+  html {
+    font-size: 40%;
+  }
+
+  .navbar-link {
+    font-weight: 700;
+  }
+
+  .section-1-banner h1 {
+    font-size: 8rem !important;
+  }
+
+  .section-1-banner p {
+    font-size: 3rem !important;
+  }
+
+  .watch-btn {
+    right: 25% !important;
+    bottom: 33vw !important;
+  }
+}
+
+@media(max-width: 900px) {
+  .section-3-content {
+    width: 90% !important;
+  }
+
+  .loading-wrapper {
+    width: 70% !important;
+  }
+
+  .loading .icon {
+    font-size: 6rem !important;
+  }
+
+  .section-5-heading {
+    font-size: 12rem !important;
+  }
+}
+
+@media(max-width: 700px) {
+  .logo {
+    top: 0 !important;
+    left: 2rem !important;
+  }
+
+  .logo .icon {
+    font-size: 8rem !important;
+  }
+
+  .controls {
+    display: none;
+  }
+
+  .cube-wrapper {
+    opacity: 0.7 !important;
+  }
+
+  .cube {
+    top: 3rem !important;
+  }
+
+  .section-1-banner {
+    position: absolute;
+  }
+
+  .section-1-banner h1 {
+    position: relative;
+    left: -5rem;
+  }
+
+  .section-1-banner h1::first-letter {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .section-1-banner button:hover {
+    clip-path: polygon(
+      50% 0%,
+      81% 5%,
+      100% 0,
+      100% 100%,
+      80% 95%,
+      50% 100%,
+      20% 95%,
+      0 100%,
+      0 0,
+      23% 5%
+    ) !important;
+  }
+
+  .iphones {
+    width: 70vw;
+    height: 70vh;
+  }
+
+  .watch-btn {
+    right: 15% !important;
+    bottom: 55vw !important;
+  }
+
+  .airpods-img-1 {
+    display: none;
+  }
+
+  .airpods .airpods-img-2 {
+    width: 100% !important;
+  }
+
+  .airpods-btn {
+    background-color: var(--white-color) !important;
+    color: var(--primary-color) !important;
+    box-shadow: 0.1rem 0.1rem 0.1rem #ddd !important;
+  }
+
+  .icon-link {
+    margin: 0 2rem !important;
+  }
+}
+
+@media(max-width: 550px) {
+  .navbar-link {
+    margin: 0 1.5rem !important;
+  }
+
+  .section-2-heading {
+    font-size: 8rem !important;
+  }
+
+  .iphones {
+    width: 75vw !important;
+  }
+
+  .section-3-heading {
+    font-size: 8rem !important;
+  }
+
+  .macbook-info-heading {
+    font-size: 5rem !important;
+  }
+
+  .macbook-btn {
+    width: 15rem !important;
+    height: 3rem !important;
+    font-size: 1.3rem !important;
+  }
+
+  .airpods-buttons {
+    width: 50rem !important;
+    text-align: center !important;
+  }
+
+  .icon-link img {
+    width: 8rem !important;
+  }
+}
+
+@media(max-width: 450px) {
+  html {
+    font-size: 35% !important;
+  }
+
+  .logo {
+    top: 10rem !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .navbar {
+    left: 50%;
+    transform: translateX(-50%) !important;
+    width: max-content;
+  }
+
+  .section-1-banner p {
+    text-align: center !important;
+  }
+
+  .iphones {
+    width: 75vw !important;
+  }
+
+  .section-3-heading {
+    font-size: 6rem !important;
+  }
+
+  .macbook-info {
+    width: 40rem !important;
+  }
+
+  .macbook-info-heading {
+    font-size: 3rem !important;
+  }
+
+  .macbook-price {
+    font-size: 2rem !important;
+    font-weight: 300 !important;
+  }
+
+  .watch-btn {
+    right: 5% !important;
+  }
+
+  .icon-link img {
+    width: 6rem !important;
+  }
+}
+// End of Responsive
 </style>
