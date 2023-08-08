@@ -1311,10 +1311,6 @@ onMounted(() => {
     width: 75vw !important;
   }
 
-  .section-6 {
-    display: none !important;
-  }
-
   .section-3-heading {
     font-size: 6rem !important;
   }
