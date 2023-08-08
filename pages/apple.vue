@@ -1311,6 +1311,10 @@ onMounted(() => {
     width: 75vw !important;
   }
 
+  .section-3 {
+    display: none !important;
+  }
+
   .section-3-heading {
     font-size: 6rem !important;
   }
@@ -1337,7 +1341,7 @@ onMounted(() => {
   }
 
   .icon-link img {
-    width: 3rem !important;
+    width: 4rem !important;
   }
 }
 // End of Responsive
