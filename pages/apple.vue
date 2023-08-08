@@ -59,8 +59,8 @@
     <section class="section-2">
       <h1 class="section-2-heading">iPhone 12</h1>
       <div class="iphones">
-        <img src="~/assets/img/apple/iphones/iphones-1-img.png" class="iphone-img-1" alt="iphone-1">
-        <img src="~/assets/img/apple/iphones/iphones-2-img.png" class="iphone-img-2" alt="iphone-2">
+        <img src="~/assets/img/apple/iphones/iPhones-1-img.png" class="iphone-img-1" alt="iphone-1">
+        <img src="~/assets/img/apple/iphones/iPhones-2-img.png" class="iphone-img-2" alt="iphone-2">
       </div>
       <div class="iphone-btns">
         <a href="#" class="iphone-btn center">
@@ -104,11 +104,12 @@
   </div>
 </template>
 <script lang="ts" setup>
-import bg1 from "~/assets/img/apple/slideshow/section-1-bg-1.jpg";
-import bg2 from "~/assets/img/apple/slideshow/section-1-bg-2.jpg";
-import bg3 from "~/assets/img/apple/slideshow/section-1-bg-3.jpg";
-import bg4 from "~/assets/img/apple/slideshow/section-1-bg-4.jpg";
-import bg5 from "~/assets/img/apple/slideshow/section-1-bg-5.jpg";
+import bg1 from 'assets/img/apple/slideshow/section-1-bg-1.jpg';
+import bg2 from 'assets/img/apple/slideshow/section-1-bg-2.jpg';
+import bg3 from 'assets/img/apple/slideshow/section-1-bg-3.jpg';
+import bg4 from 'assets/img/apple/slideshow/section-1-bg-4.jpg';
+import bg5 from 'assets/img/apple/slideshow/section-1-bg-5.jpg';
+// import iphoneImageOne from 'assets/img/apple/iPhones/'
 let y = 20
 let x = 0
 let z = 0
