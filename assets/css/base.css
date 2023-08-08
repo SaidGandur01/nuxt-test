@@ -20,3 +20,10 @@ body {
   font-size: 1.4rem;
   /* line-height: 1; */
 }
+
+:root {
+  --primary-color: #6edae6;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+}
+
