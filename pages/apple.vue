@@ -1,7 +1,7 @@
 <template>
   <div class="container apple-clon">
     <!-- Section 1 -->
-    <div class="section-1">
+    <section class="section-1">
       <a href="#" class="logo">
         <font-awesome-icon class="icon" :icon="['fab', 'apple']" />
       </a>
@@ -52,8 +52,49 @@
       </div>
 
       <div class="slideshow"></div>
-    </div>
+    </section>
     <!-- End of Section 1 -->
+
+    <!-- Section 2 -->
+    <section class="section-2">
+      <h1 class="section-2-heading">iPhone 12</h1>
+      <div class="iphones">
+        <img src="~/assets/img/apple/iphones/iphones-1-img.png" class="iphone-img-1" alt="iphone-1">
+        <img src="~/assets/img/apple/iphones/iphones-2-img.png" class="iphone-img-2" alt="iphone-2">
+      </div>
+      <div class="iphone-btns">
+        <a href="#" class="iphone-btn center">
+          <span>Learn More</span>
+        </a>
+        <a href="#" class="iphone-btn center">
+          <span>Shop</span>
+        </a>
+      </div>
+    </section>
+    <!-- End of section 2 -->
+
+    <!-- Section 3 -->
+    <section class="section-3 center">
+      <h1 class="section-3-heading">MacBook Air</h1>
+      <div class="section-3-content center">
+        <img src="~assets/img/apple/MacBook/macbook-screen.png" class="macbook-img-1" alt="macbook-air-img-1">
+        <img src="~assets/img/apple/MacBook/macbook-keyboard.png" class="macbook-img-2" alt="macbook-keyboard">
+
+        <div class="loading-wrapper">
+          <div class="loading center">
+            <font-awesome-icon class="apple icon" :icon="['fab', 'apple']" />
+            <div class="progress-bar"></div>
+          </div>
+        </div>
+
+        <div class="macbook-info">
+          <h2 class="macbook-info-heading">Light. Speed.</h2>
+          <p class="macbook-price">Starting at 1999</p>
+          <button class="macbook-btn">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- End of section 3 -->
   </div>
 </template>
 <script lang="ts" setup>
@@ -91,6 +132,8 @@ const bottomZHandle = (): void => {
   const cube = <HTMLElement>document.querySelector('.cube')
   cube?.setAttribute('style', `transform: rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z += 20}deg)`)
 }
+
+// This is to play and pause the rotation of the box at the section one.
 const playPause = () => {
   const cube = <HTMLElement>document.querySelector('.cube')
   if (playPhoneAnimation.value) {
@@ -109,6 +152,8 @@ const handleOutControls = (): void => {
   playPhoneAnimation.value = true
   playPause()
 }
+
+// This is to initialize the effect for the background images for the section one
 const setBackgroundImagesStyles = (): void => {
   const slideShowDivs = () => {
     const imageMaper: { [key: number]: string } = {
@@ -151,9 +196,21 @@ const setBackgroundImagesStyles = (): void => {
 
   slideShow()
 }
+
+// This is to create the effect for the section 3.
+const macbookSectionEffects = (): void => {
+  const content = <HTMLElement>document.querySelector('.section-3-content')
+  window.addEventListener('scroll', () => {
+    if (window.scrollY + window.innerHeight >= content?.offsetTop + content.offsetHeight / 2) {
+      content.classList.add('change')
+    }
+  })
+}
+
 onMounted(() => {
   setBackgroundImagesStyles()
   playPause()
+  macbookSectionEffects()
 })
 
 </script>
@@ -465,5 +522,257 @@ onMounted(() => {
     }
   }
   // End of Section 1
+
+  // Section 2
+  .section-2 {
+    width: 100%;
+    height: 120vh;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .section-2-heading {
+      font-size: 10rem;
+      font-weight: 200;
+      color: var(--black-color);
+      position: relative;
+      margin-bottom: 5rem;
+
+      &::before {
+        content: '';
+        width: 130%;
+        height: 30vw;
+        background-image: linear-gradient(var(--primary-color), var(--white-color));
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: skewX(-50deg);
+        transform-origin: left top;
+        z-index: -1001;
+        border-radius: 1rem;
+      }
+    }
+
+    .iphones {
+      width: 50vw;
+      height: 60vh;
+      background-image: linear-gradient(var(--primary-color), var(--white-color));
+      border-radius: 0.5rem;
+
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: contain;
+        position: absolute;
+        transition: opacity 3s;
+      }
+
+      .iphone-img-2 {
+        opacity: 0;
+      }
+
+      &:hover .iphone-img-1 {
+        opacity: 0;
+      }
+
+      &:hover .iphone-img-2 {
+        opacity: 1;
+      }
+    }
+
+    .iphone-btns {
+      display: flex;
+
+      .iphone-btn {
+        width: 6rem;
+        height: 6rem;
+        background-image: linear-gradient(
+          to right,
+          rgb(51, 51, 51) 60%,
+          rgb(82, 82, 82)
+        );
+        margin: 0 3rem;
+        border-radius: 50%;
+        position: relative;
+
+        span {
+          position: absolute;
+          top: -3rem;
+          font-size: 1.6rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 0.1rem;
+          color: var(--primary-color);
+          width: max-content;
+          transform: scale(0);
+          transition: transform 0.4s;
+        }
+
+        &:hover span {
+          transform: scale(1);
+        }
+
+        &::after {
+          content: '';
+          width: 50%;
+          height: 50%;
+          display: block;
+          border: 0.1rem solid #6edae6;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+  // End of Section 2
+
+  // Section 3
+  .section-3 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    flex-direction: column;
+    padding: 15rem 0;
+    clip-path: polygon(
+      68% 0,
+      100% 0,
+      100% 97%,
+      38% 100%,
+      0 100%,
+      0 3%
+    );
+
+    &-heading {
+      font-size: 10rem;
+      font-weight: 200;
+      color: var(--primary-color);
+      margin-bottom: 15rem;
+    }
+
+    &-content {
+      width: 80%;
+      flex-direction: column;
+      perspective: 1000rem;
+      position: relative;
+
+      img {
+        width: inherit;
+      }
+
+      .macbook-img-1 {
+        transform: rotateX(-80deg);
+        transform-origin: bottom;
+      }
+
+      &.change .macbook-img-1 {
+        transform: rotateX(0);
+        transition: transform 3s;
+      }
+
+      &.change .loading-wrapper {
+        opacity: 1;
+        transition: opacity 1s 2s;
+      }
+
+      &.change .progress-bar::after {
+        width: 100% !important;
+        transition: width 1s 3s;
+      }
+
+      &.change .loading {
+        opacity: 0;
+        transition: 1s 5s;
+      }
+
+      &.change .macbook-info {
+        opacity: 1;
+        transition: opacity 1s 6s;
+      }
+
+      .loading-wrapper {
+        position: absolute;
+        top: 6%;
+        width: 60%;
+        height: 85%;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.6),
+          rgba(255, 255, 255, 0.6)),
+          url('assets/img/apple/MacBook/macbook-1-desktop.png') center no-repeat;
+        z-index: -1001;
+        opacity: 0;
+
+        .loading {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: var(--black-color);
+          flex-direction: column;
+
+          .icon {
+            font-size: 10rem;
+            color: var(--white-color);
+            margin-bottom: 2rem;
+          }
+
+          .progress-bar {
+            width: 22rem;
+            height: 0.3rem;
+            background-color: #888;
+            border-radius: 5rem;
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 0%;
+              height: 100%;
+              background-color: var(--white-color);
+            }
+          }
+        }
+      }
+
+      .macbook-info {
+        position: absolute;
+        width: 70rem;
+        text-align: center;
+        opacity: 0;
+
+        &-heading {
+          font-size: 6rem;
+          font-weight: 400;
+          color: var(--primary-color);
+        }
+
+        .macbook-price {
+          font-size: 2.5rem;
+          font-weight: 200;
+          margin: 3rem 0;
+        }
+
+        .macbook-btn {
+          width: 25rem;
+          height: 5rem;
+          font-size: 1.5rem;
+          font-weight: 500;
+          letter-spacing: 0.2rem;
+          color: var(--primary-color);
+          background-image: linear-gradient(#ddd,#fff);
+          border: none;
+          border-radius: 0.5rem;
+          cursor: pointer;
+          box-shadow: 
+            0.1rem 0.1rem 0.1rem #fff,
+            -0.1rem -0.1rem 0.1rem #fff;
+        }
+      }
+    }
+  }
+  // End of Section 3
 }
 </style>
