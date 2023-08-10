@@ -296,8 +296,7 @@ const mainFn = (): void => {
         document.querySelectorAll<HTMLElement>(".progress-percent");
         progressPercent.forEach((el: HTMLElement, i) => {
           el.style.width = `${progressBarPercents[i]}%`;
-          const firstElementChild: HTMLElement = el?.previousElementSibling
-            ?.firstElementChild as HTMLElement;
+          const firstElementChild: HTMLElement = el?.previousElementSibling?.firstElementChild as HTMLElement;
           firstElementChild.textContent = progressBarPercents[i].toString();
         });
     }
