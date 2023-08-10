@@ -294,12 +294,12 @@ const mainFn = (): void => {
     if (progress && window.scrollY + window.innerHeight >= progress?.offsetTop) {
       const progressPercent =
         document.querySelectorAll<HTMLElement>(".progress-percent");
-      progressPercent.forEach((el: HTMLElement, i) => {
-        el.style.width = `${progressBarPercents[i]}%`;
-        const firstElementChild: HTMLElement = el?.previousElementSibling
-          ?.firstElementChild as HTMLElement;
-        firstElementChild.textContent = progressBarPercents[i].toString();
-      });
+        progressPercent.forEach((el: HTMLElement, i) => {
+          el.style.width = `${progressBarPercents[i]}%`;
+          const firstElementChild: HTMLElement = el?.previousElementSibling
+            ?.firstElementChild as HTMLElement;
+          firstElementChild.textContent = progressBarPercents[i].toString();
+        });
     }
   }
 };
