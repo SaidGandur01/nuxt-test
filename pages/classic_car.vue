@@ -12,7 +12,7 @@
     <a href="#popular-cars" class="navbar-link">Popular Cars</a>
     <a href="#video-gallery" class="navbar-link">Video Gallery</a>
     <a href="#image-gallery" class="navbar-link">Image Gallery</a>
-    <a href="#contact" class="navbar-link">Contact</a>
+    <a href="#contact" class="navbar-link">Contact</a> 
   </nav>
   <!-- End of Navbar -->
   <!-- Section 1 -->
