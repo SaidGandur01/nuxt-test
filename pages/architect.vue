@@ -1,307 +1,335 @@
 <template>
-  <div class="container">
-    <div class="hamburger-menu">
-      <div class="line line-1"></div>
-      <div class="line line-2"></div>
-      <div class="line line-3"></div>
-      <span>Close</span>
+  <div class="architect-wrapper">
+    <div class="spinner-container">
+      <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
-    <header class="header">
-      <div class="img-wrapper">
-        <img :src="imgWrapper" alt="img-wrapper" />
+    <div class="container">
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Close</span>
       </div>
-      <div class="banner">
-        <h1>Architecture & Interior Design</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button>Discover now</button>
-      </div>
-    </header>
-
-    <section class="sidebar">
-      <ul class="menu">
-        <li class="menu-item">
-          <a href="#" class="menu-link" data-content="Home">Home</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link" data-content="About us">About us</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link" data-content="Team">Team</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link" data-content="Pricing">Pricing</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link" data-content="Content">Content</a>
-        </li>
-      </ul>
-      <div class="social-media">
-        <a href="#">
-          <font-awesome-icon class="icon" :icon="['fab', 'facebook-f']" />
-        </a>
-        <a href="#">
-          <font-awesome-icon class="icon" :icon="['fab', 'instagram']" />
-        </a>
-        <a href="#">
-          <font-awesome-icon class="icon" :icon="['fab', 'twitter']" />
-        </a>
-      </div>
-    </section>
-
-    <section class="about-us">
-      <div class="section-header">
-        <h1 class="section-heading">About Us</h1>
-        <div class="underline"></div>
-      </div>
-      <div class="services">
-        <div class="service">
-          <div class="service-header">
-            <font-awesome-icon class="icon" :icon="['fas', 'pen-nib']" />
-            <h3>Interior</h3>
-          </div>
-          <p class="service-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Doloremque, officia! Necessitatibus delectus sed dicta corrupti
-            voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
-          </p>
+      <header class="header" id="main-section">
+        <div class="img-wrapper">
+          <img :src="imgWrapper" alt="img-wrapper" />
         </div>
-        <div class="service">
-          <div class="service-header">
-            <font-awesome-icon class="icon" :icon="['fas', 'paint-roller']" />
-            <h3>Exterior</h3>
-          </div>
-          <p class="service-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Doloremque, officia! Necessitatibus delectus sed dicta corrupti
-            voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
-          </p>
+        <div class="banner">
+          <h1>Architecture & Interior Design</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button>Discover now</button>
         </div>
-        <div class="service">
-          <div class="service-header">
-            <font-awesome-icon class="icon" :icon="['fas', 'pencil']" />
-            <h3>Design</h3>
-          </div>
-          <p class="service-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Doloremque, officia! Necessitatibus delectus sed dicta corrupti
-            voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
-          </p>
-        </div>
-        <div class="service">
-          <div class="service-header">
-            <font-awesome-icon class="icon" :icon="['fas', 'paintbrush']" />
-            <h3>Decoration</h3>
-          </div>
-          <p class="service-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Doloremque, officia! Necessitatibus delectus sed dicta corrupti
-            voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
-          </p>
-        </div>
-        <div class="service">
-          <div class="service-header">
-            <font-awesome-icon class="icon" :icon="['fas', 'ruler-combined']" />
-            <h3>Planning</h3>
-          </div>
-          <p class="service-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Doloremque, officia! Necessitatibus delectus sed dicta corrupti
-            voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
-          </p>
-        </div>
-        <div class="service">
-          <div class="service-header">
-            <font-awesome-icon class="icon" :icon="['far', 'building']" />
-            <h3>Execution</h3>
-          </div>
-          <p class="service-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Doloremque, officia! Necessitatibus delectus sed dicta corrupti
-            voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
-          </p>
-        </div>
-        <div class="about-us-img-wrapper">
-          <img :src="imgHouse" />
-        </div>
-      </div>
-    </section>
-
-    <section class="team">
-      <div class="section-header">
-        <h1 class="section-heading">Our Team</h1>
-        <div class="underline"></div>
-      </div>
-      <div class="cards-wrapper">
-          <!-- ref="targetOne"
-          :style="{
-            transform: cardTransform,
-            transition: 'transform 0.25s ease-out'
-          }" -->
-        <div
-          class="card"
-          data-tilt
-        >
-          <div class="card-img-wrapper">
-            <img :src="imgPersonOne" alt="CEO" />
-          </div>
-          <div class="card-info">
-            <h2>John Smith</h2>
-            <h3>CEO</h3>
-            <p>
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, impedit!"
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
-        <div
-          class="card"
-          data-tilt
-          :style="{
-            'transform-style': 'preserve-3d',
-            'transform': 'translateZ(20px)'
-          }"
-        >
-          <div class="card-img-wrapper">
-            <img :src="imgPersonTwo" alt="Designer" />
-          </div>
-          <div class="card-info" :style="{'transform': 'translateZ(50px)'}">
-            <h2>Ann Brown</h2>
-            <h3>Designer</h3>
-            <p>
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, impedit!"
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
-        <div
-          class="card"
-          data-tilt
-          :style="{
-            'transform-style': 'preserve-3d',
-            'transform': 'translateZ(20px)'
-          }"
-        >
-          <div class="card-img-wrapper">
-            <img :src="imgPersonThree" alt="Architect" />
-          </div>
-          <div class="card-info" :style="{'transform': 'translateZ(100px)'}">
-            <h2>Mary Doe</h2>
-            <h3>Architect</h3>
-            <p>
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, impedit!"
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="contact-wrapper">
-        <div class="contact-left"></div>
-        <div class="contact-right">
-          <h1 class="contact-heading">Contact</h1>
-          <form>
-            <div class="input-group">
-              <input type="text" class="field" />
-              <label class="input-label">Full Name</label>
-            </div>
-            <div class="input-group">
-              <input type="email" class="field" />
-              <label class="input-label">Email</label>
-            </div>
-            <div class="input-group">
-              <textarea class="field"></textarea>
-              <label class="message">Message</label>
-            </div>
-            <input type="submit" class="submit-btn" value="Submit" />
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <p class="copyright">
-          Copyright &copy; 2020, CodeAndCreate - All Rights Reserved
-        </p>
-        <div class="social-list">
-          <a href="#">
+      </header>
+  
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" @click.prevent class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" @click.prevent class="menu-link" data-content="About us">About us</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" @click.prevent class="menu-link" data-content="Team">Team</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" @click.prevent class="menu-link" data-content="Pricing">Pricing</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" @click.prevent class="menu-link" data-content="Content">Content</a>
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="#" @click.prevent>
             <font-awesome-icon class="icon" :icon="['fab', 'facebook-f']" />
           </a>
-          <a href="#">
+          <a href="#" @click.prevent>
             <font-awesome-icon class="icon" :icon="['fab', 'instagram']" />
           </a>
-          <a href="#">
+          <a href="#" @click.prevent>
             <font-awesome-icon class="icon" :icon="['fab', 'twitter']" />
           </a>
         </div>
-      </div>
-    </footer>
+      </section>
+  
+      <section class="about-us">
+        <div class="section-header">
+          <h1 class="section-heading">About Us</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="services">
+          <div class="service">
+            <div class="service-header">
+              <font-awesome-icon class="icon" :icon="['fas', 'pen-nib']" />
+              <h3>Interior</h3>
+            </div>
+            <p class="service-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+              voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <font-awesome-icon class="icon" :icon="['fas', 'paint-roller']" />
+              <h3>Exterior</h3>
+            </div>
+            <p class="service-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+              voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <font-awesome-icon class="icon" :icon="['fas', 'pencil']" />
+              <h3>Design</h3>
+            </div>
+            <p class="service-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+              voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <font-awesome-icon class="icon" :icon="['fas', 'paintbrush']" />
+              <h3>Decoration</h3>
+            </div>
+            <p class="service-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+              voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <font-awesome-icon class="icon" :icon="['fas', 'ruler-combined']" />
+              <h3>Planning</h3>
+            </div>
+            <p class="service-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+              voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <font-awesome-icon class="icon" :icon="['far', 'building']" />
+              <h3>Execution</h3>
+            </div>
+            <p class="service-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+              voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
+            </p>
+          </div>
+          <div class="about-us-img-wrapper">
+            <img :src="imgHouse" />
+          </div>
+        </div>
+      </section>
+  
+      <section class="team">
+        <div class="section-header">
+          <h1 class="section-heading">Our Team</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="cards-wrapper">
+          <!-- ref="targetOne"
+            :style="{
+              transform: cardTransform,
+              transition: 'transform 0.25s ease-out'
+            }" -->
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img :src="imgPersonOne" alt="CEO" />
+            </div>
+            <div class="card-info">
+              <h2>John Smith</h2>
+              <h3>CEO</h3>
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, impedit!"
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div
+            class="card"
+            data-tilt
+            :style="{
+              'transform-style': 'preserve-3d',
+              transform: 'translateZ(20px)',
+            }"
+          >
+            <div class="card-img-wrapper">
+              <img :src="imgPersonTwo" alt="Designer" />
+            </div>
+            <div class="card-info" :style="{ transform: 'translateZ(50px)' }">
+              <h2>Ann Brown</h2>
+              <h3>Designer</h3>
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, impedit!"
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div
+            class="card"
+            data-tilt
+            :style="{
+              'transform-style': 'preserve-3d',
+              transform: 'translateZ(20px)',
+            }"
+          >
+            <div class="card-img-wrapper">
+              <img :src="imgPersonThree" alt="Architect" />
+            </div>
+            <div class="card-info" :style="{ transform: 'translateZ(100px)' }">
+              <h2>Mary Doe</h2>
+              <h3>Architect</h3>
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, impedit!"
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="contact">
+        <div class="contact-wrapper">
+          <div class="contact-left"></div>
+          <div class="contact-right">
+            <h1 class="contact-heading">Contact</h1>
+            <form>
+              <div class="input-group">
+                <input type="text" class="field" />
+                <label class="input-label">Full Name</label>
+              </div>
+              <div class="input-group">
+                <input type="email" class="field" />
+                <label class="input-label">Email</label>
+              </div>
+              <div class="input-group">
+                <textarea class="field"></textarea>
+                <label class="message">Message</label>
+              </div>
+              <input type="submit" class="submit-btn" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </section>
+  
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2020, CodeAndCreate - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a href="#" @click.prevent>
+              <font-awesome-icon class="icon" :icon="['fab', 'facebook-f']" />
+            </a>
+            <a href="#" @click.prevent>
+              <font-awesome-icon class="icon" :icon="['fab', 'instagram']" />
+            </a>
+            <a href="#" @click.prevent>
+              <font-awesome-icon class="icon" :icon="['fab', 'twitter']" />
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      <a href="#main-section" class="scroll-btn">
+        <font-awesome-icon class="icon" :icon="['fas', 'arrow-up']" />
+      </a>
+    </div>
   </div>
 </template>
 <script lang="ts" setup>
-import imgWrapper from "~/assets/img/architect/bg.jpg";
-import imgHouse from "~/assets/img/architect/house.png";
-import imgPersonOne from "~/assets/img/architect/person-1.jpg";
-import imgPersonTwo from "~/assets/img/architect/person-2.jpg";
-import imgPersonThree from "~/assets/img/architect/person-3.jpg";
-import { useMouseInElement } from '@vueuse/core'
+import imgWrapper from '~/assets/img/architect/bg.jpg';
+import imgHouse from '~/assets/img/architect/house.png';
+import imgPersonOne from '~/assets/img/architect/person-1.jpg';
+import imgPersonTwo from '~/assets/img/architect/person-2.jpg';
+import imgPersonThree from '~/assets/img/architect/person-3.jpg';
+import { useMouseInElement } from '@vueuse/core';
 
-const targetOne = ref()
+const targetOne = ref();
 
 useHead({
   script: [
-			{
-        integrity: 'sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=',
-        src: 'https://code.jquery.com/jquery-3.5.1.js',
-        crossorigin: 'anonymous',
-        body: true
-			},
-			{
-        integrity: 'sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w==',
-        src: 'https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js',
-        crossorigin: 'anonymous',
-        referrerpolicy: 'no-referrer',
-        body: true
-			},
-		],
+    {
+      integrity: 'sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=',
+      src: 'https://code.jquery.com/jquery-3.5.1.js',
+      crossorigin: 'anonymous',
+      body: true,
+    },
+    {
+      integrity:
+        'sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w==',
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js',
+      crossorigin: 'anonymous',
+      referrerpolicy: 'no-referrer',
+      body: true,
+    },
+  ],
 });
 
-const { elementX, elementY, isOutside, elementHeight, elementWidth } = useMouseInElement(targetOne)
+const { elementX, elementY, isOutside, elementHeight, elementWidth } =
+  useMouseInElement(targetOne);
 const cardTransform = computed(() => {
   const MAX_ROTATION = 10;
   const rX = (
     MAX_ROTATION / 2 -
     (elementY.value / elementHeight.value) * MAX_ROTATION
-  ).toFixed(2) // => Handles x-axis
+  ).toFixed(2); // => Handles x-axis
 
   const rY = (
-    (elementX.value / elementWidth.value ) * MAX_ROTATION -
+    (elementX.value / elementWidth.value) * MAX_ROTATION -
     MAX_ROTATION / 2
-  ).toFixed(2)
-  return isOutside.value ? '' : `perspective(${elementWidth.value}px) rotateX(${rX}deg) rotateY(${rY}deg)`
-})
+  ).toFixed(2);
+  return isOutside.value
+    ? ''
+    : `perspective(${elementWidth.value}px) rotateX(${rX}deg) rotateY(${rY}deg)`;
+});
 
 const initializeClasses = (): void => {
-  const hamburguerMenu = document.querySelector(".hamburger-menu");
-  hamburguerMenu?.addEventListener("click", () => {
-    const container = document.querySelector(".container");
-    container?.classList.toggle("change");
+  const hamburguerMenu = document.querySelector('.hamburger-menu');
+  hamburguerMenu?.addEventListener('click', () => {
+    const container = document.querySelector('.container');
+    container?.classList.toggle('change');
+  });
+
+  document.querySelector(".scroll-btn")?.addEventListener("click", () => {
+    const htmlRef = document.querySelector("html")
+    htmlRef?.setAttribute('style', 'scroll-behavior: smooth')
+    setTimeout(() => {
+      htmlRef?.setAttribute('style', 'scroll-behavior: unset')
+    }, 1000);
   });
 };
 onMounted(() => {
   initializeClasses();
   setTimeout(() => {
-    document.querySelector(".container")?.classList.add("display");
-  }, 0);
+    console.log('etnramos');
+    document.querySelector('.architect-wrapper')?.classList.add('display');
+  }, 3500);
 });
 </script>
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Josefin+Slab:wght@300;400;500;600;700&family=Mulishsh:wght@300;400;500;600;700;800;900;1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Josefin+Slab:wght@300;400;500;600;700&family=Mulishsh:wght@300;400;500;600;700;800;900;1000&display=swap');
 
 * {
   margin: 0;
@@ -369,7 +397,7 @@ html {
 }
 
 .circles div::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0.7rem;
   height: 0.7rem;
@@ -463,7 +491,7 @@ html {
   display: none;
 }
 
-.display.container {
+.display .container {
   display: block;
 }
 
@@ -519,7 +547,7 @@ html {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-family: "Bricolage Grotesque", serif;
+  font-family: 'Bricolage Grotesque', serif;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
   opacity: 0;
@@ -533,7 +561,7 @@ html {
 }
 
 .hamburger-menu span::before {
-  content: "";
+  content: '';
   position: absolute;
   border-left: 1rem solid transparent;
   border-right: 1rem solid #e2b646;
@@ -583,7 +611,7 @@ html {
 }
 
 .banner h1 {
-  font-family: "Bricolage Grotesque", serif;
+  font-family: 'Bricolage Grotesque', serif;
   font-size: 8rem;
   font-weight: 300;
   color: #fff;
@@ -596,7 +624,7 @@ html {
 }
 
 .banner p {
-  font-family: "Josefin Slab", serif;
+  font-family: 'Josefin Slab', serif;
   font-size: 4rem;
   color: #fff;
   width: 70%;
@@ -612,7 +640,7 @@ html {
   height: 7rem;
   background-color: #c29525;
   border: none;
-  font-family: "Mulish", serif;
+  font-family: 'Mulish', serif;
   font-size: 2rem;
   text-transform: uppercase;
   color: #fff;
@@ -660,7 +688,7 @@ html {
 }
 
 .menu-link {
-  font-family: "Bricolage Grotesque", serif;
+  font-family: 'Bricolage Grotesque', serif;
   font-size: 4rem;
   color: #555;
   position: relative;
@@ -722,7 +750,7 @@ html {
 }
 
 .section-heading {
-  font-family: "Mulish", serif;
+  font-family: 'Mulish', serif;
   font-size: 5rem;
   font-weight: 300;
   color: #4b4b4b;
@@ -792,7 +820,7 @@ html {
 }
 
 .service-header h3 {
-  font-family: "Bricolage Grotesque", serif;
+  font-family: 'Bricolage Grotesque', serif;
   font-size: 2.6rem;
   line-height: 2.6rem;
   font-weight: 400;
@@ -800,7 +828,7 @@ html {
 }
 
 .service-text {
-  font-family: "Josefin Slab", serif;
+  font-family: 'Josefin Slab', serif;
   font-size: 1.6rem;
   text-align: justify;
 }
@@ -877,7 +905,7 @@ html {
 }
 
 .card-info h2 {
-  font-family: "Bricolage Grotesque", serif;
+  font-family: 'Bricolage Grotesque', serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
   font-weight: 300;
@@ -885,7 +913,7 @@ html {
 }
 
 .card-info h3 {
-  font-family: "Mulish", serif;
+  font-family: 'Mulish', serif;
   font-size: 2rem;
   font-weight: 500;
   color: #a52a2a;
@@ -893,7 +921,7 @@ html {
 }
 
 .card-info p {
-  font-family: "Bricolage Grotesque", serif;
+  font-family: 'Bricolage Grotesque', serif;
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: 300;
@@ -907,7 +935,7 @@ html {
   height: 3rem;
   background-color: #c29525;
   border: none;
-  font-family: "Bricolage Grotesque", serif;
+  font-family: 'Bricolage Grotesque', serif;
   font-size: 1.4rem;
   line-height: 1.5rem;
   color: #eee;
@@ -934,7 +962,7 @@ html {
 .contact-left {
   width: 35%;
   background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
-    url("assets/img/architect/contact-bg.jpg") center no-repeat;
+    url('assets/img/architect/contact-bg.jpg') center no-repeat;
   background-size: cover;
 }
 
@@ -945,7 +973,7 @@ html {
 }
 
 .contact-heading {
-  font-family: "Bricolage Grotesque", serif;
+  font-family: 'Bricolage Grotesque', serif;
   font-size: 6rem;
   font-weight: 300;
   color: #272727;
@@ -971,7 +999,7 @@ html {
   border-bottom: 0.2rem dashed #636363;
   margin: 3rem 0;
   padding: 1rem 1rem 1rem 0;
-  font-family: "Mulish", serif;
+  font-family: 'Mulish', serif;
   font-size: 1.6rem;
   color: #4b4b4b;
 }
@@ -992,7 +1020,7 @@ html {
 .input-group label {
   position: absolute;
   left: 0;
-  font-family: "Bricolage Grotesque", serif;
+  font-family: 'Bricolage Grotesque', serif;
   font-size: 1.8rem;
   color: #4b4b4b;
   text-transform: uppercase;
@@ -1020,7 +1048,7 @@ html {
   color: #fff;
   border: none;
   margin-top: 2rem;
-  font-family: "Mulish", serif;
+  font-family: 'Mulish', serif;
   font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -1046,7 +1074,7 @@ html {
 }
 
 .copyright {
-  font-family: "Bricolage Grotesque", serif;
+  font-family: 'Bricolage Grotesque', serif;
   font-size: 1.6rem;
   color: #a7a7a7;
 }
