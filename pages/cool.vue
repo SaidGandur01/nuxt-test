@@ -319,9 +319,7 @@ useHead({
   ]
 });
 onMounted(() => {
-  setTimeout(() => {
-
-      // Value setters
+  // Value setters
   const valueSetters = () => {
     gsap.set('#nav a', { y: '-100%', opacity: 0 });
     gsap.set('#home .parent .child', { y: '100%' });
@@ -496,8 +494,6 @@ onMounted(() => {
   locoInitialize();
   cardHoverEffect();
   cardSectionHoverEffect();
-}, 0);
-
 })
 </script>
 <style lang="css">
