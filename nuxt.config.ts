@@ -24,8 +24,7 @@ export default defineNuxtConfig({
           referrerpolicy: "no-referrer",
         },
         {
-          src: 'https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js',
-          body: true
+          src: 'https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'
         },
       ],
       noscript: []
