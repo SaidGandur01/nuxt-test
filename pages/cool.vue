@@ -319,6 +319,7 @@ useHead({
   ]
 });
 const testFlag = ref(false)
+
 onMounted(() => {
   console.log(testFlag.value)
   setTimeout(() => {
@@ -498,7 +499,7 @@ onMounted(() => {
   locoInitialize();
   cardHoverEffect();
   cardSectionHoverEffect();
-}, 100);
+}, 300);
 
 })
 </script>
