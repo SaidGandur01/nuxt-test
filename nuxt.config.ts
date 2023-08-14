@@ -22,7 +22,6 @@ export default defineNuxtConfig({
           src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js',
           crossorigin: 'anonymous',
           referrerpolicy: "no-referrer",
-          body: true,
         },
         {
           src: 'https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js',
