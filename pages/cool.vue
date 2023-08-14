@@ -496,7 +496,7 @@ onMounted(() => {
   locoInitialize();
   cardHoverEffect();
   cardSectionHoverEffect();
-}, 300);
+}, 0);
 
 })
 </script>
