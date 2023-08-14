@@ -17,6 +17,17 @@ export default defineNuxtConfig({
       ],
       style: [],
       script: [
+        {
+          integrity: 'sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==',
+          src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js',
+          crossorigin: 'anonymous',
+          referrerpolicy: "no-referrer",
+          body: true,
+        },
+        {
+          src: 'https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js',
+          body: true
+        },
       ],
       noscript: []
     }
