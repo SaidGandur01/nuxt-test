@@ -24,6 +24,15 @@ export default defineNuxtConfig({
           referrerpolicy: "no-referrer",
         },
         {
+          src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js'
+        },
+        {
+          src: 'https://unpkg.com/split-type'
+        },
+        {
+          src: 'https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js'
+        },
+        {
           src: 'https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'
         },
       ],
