@@ -35,6 +35,9 @@ export default defineNuxtConfig({
         {
           src: 'https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'
         },
+        {
+          src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js'
+        }
       ],
       noscript: []
     }
